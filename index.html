@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <title>Document</title>
+</head>
+<body>
+
+   <video id="video" loop>
+      <source src="assets/videoplayback.mp4">
+   </video>
+
+   <div class="main">
+      <div class="cookies">
+         <div class="text">
+            <h1>Использовать куки?</h1>
+            <p>Оставаясь на Веб-сайте, 
+               Вы соглашаетесь с размещением файлов cookie на вашем компьютере, 
+               с целью анализа использования Веб-сайта. Если вы не хотите принимать 
+               файлы cookie, вы должны прекратить использование Веб-сайта.</p>
+         </div>
+         <div class="buttons">
+            <button id="not">Отклонить</button> <button id="allow">Разрешить</button>
+         </div>
+      </div>
+   </div>
+
+
+   <script>
+      var elem = document.documentElement;
+
+      const allow = document.getElementById("allow")
+      const not = document.getElementById("not")
+      const video = document.getElementById("video")
+      allow.addEventListener("mouseover", () => {
+         setTimeout(() => {
+            setTimeout(() => {
+               window.location.href = "./main.html";
+            }, 3000)
+            openFullscreen()
+            video.style.display = "block"
+            video.volume = 1
+            video.play()
+         }, 2000)
+         setTimeout(() => {
+            window.location.href = "./main.html";
+         }, 3000)
+         openFullscreen()
+         video.style.display = "block"
+         video.volume = 1
+         video.play()
+      })
+      not.addEventListener("mouseover", () => {
+         setTimeout(() => {
+            setTimeout(() => {
+               window.location.href = "./main.html";
+            }, 3000)
+            openFullscreen()
+            video.style.display = "block"
+            video.volume = 1
+            video.play()
+         }, 2000)
+      })
+
+      function openFullscreen() {
+      if (elem.requestFullscreen) {
+         elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { /* Firefox */
+         elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+         elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+         elem.msRequestFullscreen();
+      }
+      }
+   </script>
+</body>
+</html>

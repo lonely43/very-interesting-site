@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*  font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');           /*  font-family: 'Open Sans', sans-serif; */
+
+body{
+   height: 100vh;
+   width: 100vw;
+
+   padding: 0;
+   margin: 0;
+
+   line-height: 1.25;
+   box-sizing: border-box;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: rgb(255, 255, 255);
+
+   font-family: 'Poppins', sans-serif;
+}
+
+#video{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   display: none;
+}
+
+.main{
+   display: flex;
+   flex-direction: column;
+   gap: 30rem;
+
+   width: 20rem;
+
+   padding: 1rem;
+   border: 0.05rem solid rgb(226, 226, 226);
+   border-radius: 2rem;
+}
+
+.cookies{
+   flex-direction: column;
+}
+h1{
+   text-align: center;
+   font-size: 1em;
+}
+p{
+   font-size: 0.6em;
+}
+
+.buttons{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+button{
+   border: none;
+   background-color: rgb(113, 113, 239);
+   color: rgb(255, 255, 255);
+   font-size: 0.5rem;
+   padding: 0.4rem;
+   border-radius: 0.4rem;
+}
+button:hover{
+   cursor: pointer;
+}

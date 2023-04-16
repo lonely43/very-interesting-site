@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="main.css">
+   <link rel="icon" href="./assets/g7xDYn2X5XU.jpg">
+   <title>топовый сайт</title>
+</head>
+<body>
+   
+   <div class="img">
+      <span id="pet"><h1>петрович</h1></span>
+      <span id="pizda"><div id="fuck" class="fuck"></div> <h1>опа</h1></span>
+      <span id="offnik"><h1>домой</h1></span>
+      <span id="bibika"><h1>чекай</h1></span>
+   </div>
+
+   <script>
+      const pizda = document.getElementById("pizda")
+      const fuck = document.getElementById("fuck")
+      pizda.addEventListener("mouseover", () => {
+         fuck.style.bottom = 0
+      })
+      pizda.addEventListener("mouseout", () => {
+         fuck.style.bottom = -100 + "px"
+         console.log(fuck.style.bottom)
+      })
+   </script>
+
+</body>
+</html>

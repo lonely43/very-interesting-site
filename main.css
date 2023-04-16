@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*  font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');           /*  font-family: 'Open Sans', sans-serif; */
+
+html{
+   line-height: 1.25;
+   box-sizing: border-box;
+}
+body{
+   padding: 0;
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Poppins', sans-serif;
+}
+.img{
+   width: 100%;
+   height: 100%;
+
+   display: grid;
+   justify-content: center;
+   align-content: center;
+
+   grid-template-columns: 10rem 10rem;
+   grid-template-rows: 6rem 6rem;
+   gap: 1rem;
+}
+
+#pet{
+   background-image: url(./assets/g7xDYn2X5XU.jpg);
+}
+
+#pizda{
+   position: relative;
+   overflow: hidden;
+}
+#offnik{
+   background-image: url(./assets/offnik.jpg);
+   background-position: center;
+   background-size: 10rem;
+   transition: 0.5s;
+}
+#bibika{
+   background-image: url(./assets/poka-bibika.jpg);
+   background-position: center;
+   background-size: 12rem;
+   transition: 0.5s;
+}
+.fuck{
+   position: absolute;
+   left: 1rem;
+   bottom: -5rem;
+   width: 3rem;
+   height: 5rem;
+   background-color: antiquewhite;
+   background-image: url(./assets/JqEcYTv.png);
+   background-size: cover;
+   background-position: center;
+
+   transition: 0.5s;
+}
+.img span{
+   width: 10rem;
+   height: 6rem;
+
+   border-radius: 10px;
+   filter: grayscale(1);
+   transition: 0.5s;
+   background-image: url(./assets/n.jpg);
+   background-position: center;
+   background-size: 13rem;
+   background-repeat: no-repeat;
+
+   display: flex;
+   align-items: flex-end;
+   justify-content: end;
+
+   font-size: 0.5rem;
+   color: aliceblue;
+}
+
+h1{
+   padding-right: 0.8rem;
+   margin: 0;
+}
+#offnik:hover{
+   background-size: 12rem;
+}
+#bibika:hover{
+   background-size: 15rem;
+}
+.img span:hover{
+   filter: grayscale(0);
+   background-size: 15rem;
+   font-size: 0.8em;
+}
